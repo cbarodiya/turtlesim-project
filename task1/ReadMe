@@ -1,1 +1,7 @@
+create package in souce directory
 
+ros2_ws/
+└── src/
+    ├── my_py_pkg/                  # Python-based ROS 2 package
+    ├── my_cpp_pkg/                 # C++-based ROS 2 package
+    └── turtlesim_catch_them_all/   # Main Python package for turtle catch project
