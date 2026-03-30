@@ -1,1 +1,33 @@
+Project Description
+This project is developed using the ROS 2 framework and the TurtleSim simulation environment. The main objective of the project is to create an interactive system where one main turtle (turtle1) continuously catches other turtles in a dynamic environment.
 
+In this system, turtle1 acts as the primary agent that moves intelligently to catch other turtles spawned in the simulation. The logic of the project is designed such that turtle1 always targets the nearest turtle first. By calculating the distance between turtle1 and all other turtles, the system identifies the closest one and moves turtle1 toward it.
+
+Once turtle1 successfully catches a turtle, that turtle is removed from the simulation. Immediately after, a new turtle is spawned at a random position. This process continues repeatedly, creating a continuous loop of spawning and catching turtles.
+
+The behavior of the system resembles a snake-style game, where the main character keeps interacting with newly appearing targets. However, instead of growing in size, the system focuses on continuous tracking, navigation, and target elimination using ROS 2 concepts.
+
+Working Principle
+> Turtle1 starts at an initial position.
+> Multiple turtles are spawned dynamically in the environment.
+> The system calculates distances to determine the nearest turtle.
+> Turtle1 moves toward and catches the nearest turtle.
+> After catching:
+    <The caught turtle is removed.
+    <A new turtle is spawned at a random location.
+>This cycle continues indefinitely, demonstrating real-time control and decision-making.
+
+Technologies Used
+> ROS 2 (Robot middleware)
+> TurtleSim (2D simulation environment)
+> Python (for node development, control logic, and automation)
+
+Key Features
+> Real-time turtle tracking and movement
+> Nearest-target selection algorithm
+> Dynamic turtle spawning and deletion
+> Continuous execution loop (game-like behavior)
+> Demonstration of ROS 2 publishers, subscribers, services, and nodes
+
+Conclusion
+This project demonstrates the practical implementation of robotic control concepts using ROS 2 in a simple and visual simulation. It helps in understanding core ROS 2 functionalities such as communication between nodes, service calls, and real-time decision-making, while also making the learning process interactive and engaging.
