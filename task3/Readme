@@ -1,1 +1,2 @@
-
+use this command for checking entered data 
+"ros2 topic echo /alive_turtles"
